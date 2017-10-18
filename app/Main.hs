@@ -9,13 +9,16 @@ module Main where
 
 import           Control.Applicative ((<|>))
 
-import           Snap.Core           (Snap, ifTop)
+import           Snap.Core           (dir, ifTop, Snap)
 import           Snap.Http.Server    (httpServe, setPort)
 import           Snap.Util.FileServe (serveDirectory, serveFile)
 
 
 site :: Snap ()
-site = ifTop (serveFile "public/index.html") <|> serveDirectory "public"
+site = ifTop (serveFile "public/index.html")
+   <|> (dir ".well-known/acme-challenge" $
+           serveDirectory "/home/public/.well-known/acme-challenge")
+   <|> serveDirectory "public"
 
 main :: IO ()
 main = httpServe (setPort 3000 mempty) site

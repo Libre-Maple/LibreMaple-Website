@@ -1,0 +1,111 @@
+body {
+    background-color: #1F1F1F;
+
+    color: #CDCDCD;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+a {
+    color: #5D8ABA;
+}
+
+a:hover {
+    color: #38B9FF;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.spacer-horiz-2 {
+    margin: 2rem 0 2rem 0;
+}
+
+.row-no-margin {
+    margin: 0;
+}
+
+.full-container {
+    margin: 0;
+    padding: 0;
+}
+
+.tertiary-color {
+    background-color:#263728;
+}
+
+.nav-item {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nav-link {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #CDCDCD;
+}
+
+#brand-title:hover {
+    text-shadow: 0 0 4px #CDCDCD;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 65px;
+    height: 48px;
+
+    background-image: url("/img/logo.png");
+    background-repeat: no-repeat;
+}
+
+#logo:hover {
+    background-image: url("/img/logo2.png");
+}
+
+#banner-container {
+    background-image: url("/img/ellinia.png");
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+#banner-text-row {
+    margin: 0;
+    padding: 12vh 0 12vh 0;
+}
+
+#banner-text-container {
+    margin-left: 5vw;
+    margin-right: 6vw;
+    padding: 1.5rem;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px solid #DCDCDC;
+
+    color: #202020;
+}
+
+#banner-text-container:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-text {
+    margin: 0;
+}
+
+#main-text-row .col {
+    padding-top: 10px;
+}
+
+.section-icon:hover {
+    filter: drop-shadow(0 0 8px #CDCDCD);
+}
+
+#footer-hr {
+    margin: 3rem 0 0 0;
+    border-color: #666;
+}

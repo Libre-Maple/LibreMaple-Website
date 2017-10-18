@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>LibreMaple | Open source everything &mdash; even the client.</title>
+
+  <!-- "meta"s -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="LibreMaple, Maplestory, open source, free software, private server, free software, collaborative, libre, maple, custom client, maplestory client, maplestory, client, gnu">
+  <meta name="description" content="Open-sourcing and making collaborative the entirety of Maplestory, even the client.">
+  <meta name="theme-color" content="#222222">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+
+  <!-- Icon stuff -->
+  <link rel="shortcut icon" href="/icon/favicon.ico">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+</head>
+
+<body onload="smartquotes();">
+  <div class="container-fluid full-container">
+    <!-- Top nav bar -->
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-dark">
+      <!-- Logo and site name -->
+      <a class="navbar-brand" href="/"><div id="logo" class="logo"></div>&nbsp;&nbsp;<span id="brand-title">LibreMaple</span></a>
+
+      <!-- For mobile "hamburger" menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav options -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join in</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Source</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Giant-ass banner -->
+    <div id="banner-container" class="container-fluid full-container">
+      <div id="banner-text-row" class="row row-no-margin">
+        <!-- Spacer -->
+        <div class="col-7"></div>
+
+        <!-- Text that goes on top of giant-ass banner -->
+        <div id="banner-text-container" class="col">
+          <p class="banner-text">
+            <strong>LibreMaple</strong> wants to take a fully working version
+            of Maplestory &mdash; all of it, client and server &mdash; and put
+            it entirely in the hands of its users. Limitless client editing,
+            truly customizable gameplay, cross-platforming natively, and
+            complete open source.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Initial 3 info columns -->
+      <div id="main-text-row" class="row">
+        <div class="col">
+          <h1 class="text-center">Customization</h1>
+
+          <div class="row">
+            <div class="col-3 col-xs-3"></div>
+
+            <div class="col-6 col-xs-6">
+              <img src="/img/customization.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col-3 col-xs-3"></div>
+          </div>
+
+          <p>
+            LibreMaple aims to expose the entirety of Maplestory to customization. Not just
+            cosmetic changes and NPC scripts, but fundamental changes to gameplay allowing
+            for new entirely custom classes, custom game content, client-side plugins, and
+            more.
+          </p>
+
+          <p>
+            Without the restriction that a black-box client puts on the game as a whole
+            (both client <strong>and</strong> server side), Maplestory can be freed from
+            the way that Nexon wants it, and from the way that Nexon wanted it so many
+            years ago.
+          </p>
+        </div>
+
+        <div class="col tertiary-color">
+          <h1 class="text-center">True freedom</h1>
+
+          <div class="row">
+            <div class="col-3 col-xs-3"></div>
+
+            <div class="col-6 col-xs-6">
+              <img src="/img/true-freedom.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col-3 col-xs-3"></div>
+          </div>
+
+          <p>
+            Maplestory has always been nominally free-to-play. Then, with the advent of
+            private servers for the game, even the burden of microtransactions could be
+            lifted. But Maplestory has never been free as in <strong>freedom</strong>.
+          </p>
+
+          <p>
+            Now, with the power of the Journey client (licensed under
+            <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">the GPL v3</a>) and the
+            open-standard data format it uses
+            (<a href="https://nxformat.github.io/">NX PKG4</a>, licensed under
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US">the CC
+            BY-SA 3.0</a>), the work of the earliest Maplestory private servers (c.f.
+            OdinMS, licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
+            the AGPL v3</a>) can be completed. Maplestory can be played without any of
+            Nexon's proprietary software or data formats, yet still be the old Maplestory
+            you already know and love, however you want it.
+          </p>
+        </div>
+
+        <div class="col">
+          <h1 class="text-center">Collaboration</h1>
+
+          <div class="row">
+            <div class="col-3 col-xs-3"></div>
+
+            <div class="col-6 col-xs-6">
+              <img src="/img/collaboration.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col-3 col-xs-3"></div>
+          </div>
+
+          <p>
+            LibreMaple is a large undertaking, but all players and fans &mdash; long-time
+            or new &mdash; have something to gain from it. LibreMaple <strong>is not itself
+            a Maplestory private server</strong>. The efforts of LibreMaple go towards no
+            server in particular, but rather allow a set of tools that can be developed
+            and used freely by <em>anyone for any purpose</em> (including independent
+            private servers).
+          </p>
+
+          <p>
+            As such, LibreMaple welcomes and accepts contributions from persons of all
+            stripes and all affiliations. Such a project can only thrive on cooperation.
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer-horiz-2"></div>
+
+      <!-- "Cross-platform natively" column -->
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Cross-platform natively</h1>
+
+          <div class="spacer-horiz-2"></div>
+
+          <div class="row">
+            <div class="col"></div>
+
+            <div class="col">
+              <img src="/img/gnu-linux.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col">
+              <img src="/img/bsd.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col">
+              <img src="/img/macos.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col">
+              <img src="/img/windows-nt.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col"></div>
+          </div>
+
+          <div class="spacer-horiz-2"></div>
+
+          <p>
+            Maplestory has, regrettably, always been native to the
+            <a href="https://en.wikipedia.org/wiki/Windows_NT">Windows NT</a> line of
+            operating systems. Some rather ugly, inefficient, and time-consuming hacks are
+            required to run it on <a href="https://en.wikipedia.org/wiki/MacOS">macOS</a>,
+            and even then, it's not even close to native. Not to mention
+            <a href="https://en.wikipedia.org/wiki/Linux">GNU/Linux</a> and the
+            <a href="https://en.wikipedia.org/wiki/List_of_BSD_operating_systems">BSDs</a>,
+            free and libre operating systems which have had no ability to run Maplestory at
+            all. Even newer versions of Windows NT struggle with older versions of the game
+            as used by numerous very popular private servers.
+          </p>
+
+          <p>
+            With an <em>open</em> version of Maplestory, both parts (client and server) of
+            the game will be fully native to any operating system where the code can be
+            compiled. LibreMaple makes it a priority to <strong>keep everything as portable
+            as possible</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- "Join in and help out" column -->
+      <div class="row">
+        <div class="col tertiary-color" style="padding-top:1rem;">
+          <h1 class="text-center">Join in and help out</h1>
+
+          <div class="row">
+            <div class="col-4 col-xs-4"></div>
+
+            <div class="col-4 col-xs-4">
+              <img src="/img/help-out.svg" class="img-fluid section-icon" alt="">
+            </div>
+
+            <div class="col-4 col-xs-4"></div>
+          </div>
+
+          <p>
+            LibreMaple needs your help! Check out <a href="#">the <strong>"Join in"</strong>
+            section</a> for more details. We're mostly looking for those experienced with
+            software development, especially experience with C++ (C++ is the implementation
+            language for the Journey client), but server-side experience and general
+            programming is highly welcomed as well.
+          </p>
+
+          <p>
+            Additionally, LibreMaple will need testers and maintainers of the
+            client/tooling for various different platforms. And as it grows, it's possible
+            for there to be opportunity for community-made custom content to be added into
+            the game as well, which would require a great many skills (visual art, writing,
+            etc.).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr id="footer-hr" />
+
+  <!-- Footer -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="text-center text-muted">
+          <small>This webpage uses <a href="https://getbootstrap.com/">Bootstrap</a> and
+          <a href="http://smartquotesjs.com/">smartquotes.js</a>. The rest of the HTML, CSS,
+          and JavaScript is licensed under
+          <a href="https://www.gnu.org/licenses/agpl-3.0.en.html"> the GNU Affero General
+          Public License version 3</a>. Icons due to Freepik from
+          <a href="https://www.flaticon.com">www.flaticon.com</a>. The rest of the assets
+          are licensed under the
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.</small>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img alt="Creative Commons BY-SA 4.0 License" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS stuff -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" defer></script>
+  <script src="/js/smartquotes.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+
+</html>

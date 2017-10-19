@@ -35,3 +35,4 @@ log/
 *.zip
 *.rar
 *.7z
+public/.well-known
